@@ -1,0 +1,261 @@
+/* Small Devices */
+body {
+    background: linear-gradient(to right, rgba(31,59,8,1) 0%, rgba(52,136,139,1) 0%, rgba(52,136,139,0.5) 100%);
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #34888B;
+    color: white;
+    font-family: 'Poiret One', cursive;
+}
+
+#navBg {
+    background-color: #34888B;
+    font-family: 'Poiret One', cursive;
+    color: white;
+}
+
+.game-container {
+    position: relative;
+    margin: 20px auto;
+    width: 360px;
+    height: 360px;
+}
+
+.simonBoard {min-width: 100%;min-height: 100%;}
+
+.board {
+    float: left;
+    height: 179px;
+    width: 180px;
+    border: 2px solid white;
+}
+
+.red {
+    width: 180px;
+    border-radius: 0 200px 0 0;
+    background-color: rgb(102, 4, 4);
+}
+
+.blue {
+    width: 180px;
+    border-radius:  0 0 200px 0;
+    background-color: rgb(19, 7, 96);
+}
+
+.yellow {
+    width: 180px;
+    border-radius: 0 0 0 200px;
+    background-color: rgb(201, 179, 14);
+}
+
+.green {
+    width: 180px;
+    border-radius: 200px 0 0 0;
+    background-color: rgb(73, 124, 6);
+}
+
+.controlBoard {
+    position: absolute;
+    top: 17.5%;
+    left: 17.5%;
+    border: 1px solid rgb(21, 84, 75);
+    border-radius: 50%;
+    width: 65%;
+    height: 65%;
+    background-color: rgb(238, 238, 238);
+}
+
+.wrapper1 {
+    margin-top: 25px;
+    height: 25px;
+    color: rgb(21, 84, 75);
+    text-align: center;
+    font-size: 35px;
+    line-height: 0;
+}
+
+.wrapper2 {
+    margin-top: 10px;
+    height: 55px;
+    margin-bottom: 5px;
+}
+
+.inline {
+    float: left;
+    width: 32.2%;
+    font-size: 12px;
+    text-align: center;
+    color: rgb(21, 84, 75);
+}
+
+.textTag {margin: 4px auto;}
+
+#reset {background-color: rgb(19, 7, 96);box-shadow: 0 4px 5px rgb(2, 2, 96);
+}
+
+#reset:active {box-shadow: 0 3px 5px rgb(2, 2, 96);top: 1px;
+}
+
+button:focus {outline: none;}
+
+.start {background-color: rgb(107, 8, 8);box-shadow: 0 4px 5px rgb(73, 8, 8);
+}
+
+.start:active {box-shadow: 0 3px 5px rgb(73, 8, 8);top: 1px;
+}
+
+.strict, .start, #reset {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.strict {background-color: rgb(107, 114, 10);box-shadow: 0 4px 5px rgb(88, 99, 4);
+}
+
+.strict:active {box-shadow: 0 3px 5px rgb(88, 99, 4);top: 1px;}
+
+.wrapper3 {clear: both;height: 55px;}
+
+.inline2 {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    color: rgb(21, 84, 75);
+}
+
+.display {
+    margin: 0 auto;
+    border-radius: 15%;
+    background-color: rgb(51, 12, 12);
+    height: 24px;
+    width: 70px;
+    color: gray;
+    line-height: 1.7;
+}
+
+.wrapper4 {
+    height: 20px;
+    width: 80%;
+    position: relative;
+    text-align: center;
+    left: 11%;
+    color: rgb(21, 84, 75);
+}
+
+.switch {
+    float: left;
+    margin: 0 2%;
+    min-width: 50%;
+    min-height: 100%;
+}
+
+.off, .on {
+    margin: 0 2%;
+    float: left; 
+    min-width: 17%;
+    min-height: 20px;
+}
+
+.on {position: relative;right: 5px;}
+
+.off {position: relative;left: 3px;}
+
+#btn-off {
+    float: left;
+    width: 50%;
+    height: 20px;
+    background-color: rgb(39, 163, 59);
+    border-radius: 5px 0 0 5px;
+}
+
+#btn-on {
+    float: left;
+    width: 50%;
+    height: 20px;
+    background-color: rgb(28, 2, 2);
+    border-radius: 0 5px 5px 0;
+}
+
+/* Medium Devices */
+@media (min-width: 768px) {
+    .game-container {
+        margin: 30px auto;
+        width: 500px;
+        height: 500px;
+    }
+
+    .green {width: 246px;border-radius: 360px 0 0 0;}
+
+    .red {width: 246px;border-radius: 0 360px 0 0;}
+
+    .blue {width: 246px;border-radius:  0 0 360px 0;}
+
+    .yellow {width: 246px;border-radius: 0 0 0 360px;}
+
+    .board {height: 247px;}
+    
+    .wrapper1 {
+        margin-top: 45px;
+        height: 40px;
+        font-size: 60px;
+    }
+
+    .wrapper2 {height: 80px;}
+    
+    .start, .strict, #reset {width: 35px;height: 35px;}
+    
+    .wrapper3 {margin-bottom: 15px;}
+    
+    .inline {
+        width: 33%;
+        height: 70px;
+        font-size: 14px;
+        left: 5px;
+    }
+    
+    .inline2 {height: 70px;font-size: 14px;}
+
+    .display {
+        height: 26px;
+        width: 100px;
+        font-size: 18px;
+        line-height: 1;
+    }
+
+    .textTag {margin-top: 14px;}
+}
+
+/* Large Devices */
+@media (min-width: 1200px) {
+    .game-container {width: 600px;height: 600px;}
+
+    .green {width: 296px;border-radius: 400px 0 0 0;}
+
+    .red {width: 296px;border-radius: 0 400px 0 0;}
+
+    .blue {width: 296px;border-radius:  0 0 400px 0;}
+
+    .yellow {width: 296px;border-radius: 0 0 0 400px;}
+
+    .board {height: 297px;}
+    
+    .wrapper1 {margin-top: 60px;font-size: 70px;margin-bottom: 10px;}
+
+    .inline {font-size: 16px;color: rgb(21, 84, 75);}
+    
+    .wrapper2 {margin-bottom: 10px;}
+    
+    .wrapper3 {margin-bottom: 22px;}
+    
+    .inline {font-size: 16px;color: rgb(21, 84, 75);}
+    
+    .display {
+        height: 26px;
+        width: 120px;
+        font-size: 22px;
+    }
+
+}

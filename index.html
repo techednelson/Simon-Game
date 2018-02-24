@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Simon Game</title>
+        <link rel="stylesheet" href="css/style.css">
+        <!--External Bootstrap 4 Css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css">
+        
+        <!-- External Google Font CSS -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poiret+One">
+    </head>
+    <body>
+      
+  
+  <!-- Nav Bar -->
+  <div id="navBg" class="navbar-dark">
+    <nav class="container navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#"><img src="https://webtechnelson.com/images/logo.png" width="30px" height="30px" alt="logo"> Webtechnelson</a>
+          <button class="navbar-toggler pointer" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active"></li>
+                <a class="nav-link homelink" href="#"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></a>
+              <li class="nav-item dropdown">
+           <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-building fa-lg" aria-hidden="true"></i> Helpful Link for this Pen</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval" target="_blank"><i class="fa fa-firefox fa-lg" aria-hidden="true"></i>  setInterval</a>
+                <a class="dropdown-item" href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout" target="_blank"><i class="fa fa-firefox fa-lg" aria-hidden="true"></i>  setTimeout</a>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link homeLink" href="https://codepen.io/techednelson/collections/popular/" target="_blank"><i class="fa fa-codepen fa-lg" aria-hidden="true"></i> My Other Projects</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-commenting fa-lg" aria-hidden="true"></i> Contact & Feedback</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="https://twitter.com/webtechnelson" target="_blank"><i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i> Twitter</a>
+              <a class="dropdown-item" href="#"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> info@webtechnelson.com</a>
+            </div>
+          </li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+       
+       
+   <div class="game-container">
+        <div id="simon" class="simonBoard">
+            <div id="green" class="board green"><audio id="greenAudio" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" type="audio/mpeg"></audio></div>
+            <div id="red" class="board red"><audio id="redAudio" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" type="audio/mpeg"></audio></div>
+            <div id="yellow" class="board yellow"><audio id="yellowAudio" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" type="audio/mpeg"></audio></div>
+            <div id="blue" class="board blue"><audio id="blueAudio" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" type="audio/mpeg"></audio></div>
+        </div>
+    <div id="control" class="controlBoard">
+        <div class="wrapper1">
+            <p>Simon</p>
+        </div>
+        <div class="wrapper2">
+            <div class="inline">
+                <button id="reset">
+                    <audio id="winAudio" src="https://webtechnelson.com/audio/applause.mp3" type="audio/mpeg"></audio>
+                    <audio id="wrongAudio" src="https://webtechnelson.com/audio/wrong.mp3" type="audio/mpeg"></audio>
+                    <audio id="tryAudio" src="https://webtechnelson.com/audio/error.mp3" type="audio/mpeg"></audio>
+                    <audio id="resetAudio" src="https://webtechnelson.com/audio/reset.mp3" type="audio/mpeg"></audio>
+                    <audio id="startAudio" src="https://webtechnelson.com/audio/start.mp3" type="audio/mpeg"></audio>
+                </button>
+                <p class="textTag">RESET</p>
+            </div>
+            <div class="inline">
+                <button id="start" class="start"></button>
+                <p class="textTag">START</p>
+                </div>
+            <div class="inline">
+                <button id="strict" class="strict"></button>
+                <p class="textTag">STRICT</p>
+            </div>
+        </div>
+        <div class="wrapper3">
+            <div class="inline2">
+                <p id="counter" class="display">- -</p>
+                <p class="textTag">COUNT</p>
+            </div>
+            </div>
+        <div class="wrapper4">
+            <div><p class="off">OFF</p></div>
+            <div class="switch">
+                <div id="btn-off"></div>
+                <div id="btn-on"></div>
+            </div>
+            <div><p class="on">ON</p></div>
+        </div>
+    </div>
+</div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+        <scrip src="https://use.fontawesome.com/dfb01e1534.js"></scrip>
+        <script src="js/app.js" charset="utf-8"></script>
+    </body>
+</html>
